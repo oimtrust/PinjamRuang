@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.oimtrust.pinjamruang.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/welcome">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear_welcome"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="60dp">
+
+        <customfonts.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/cara_mudah"
+            android:lines="1"
+            android:textColor="#9d9ea0"
+            android:gravity="center"/>
+
+        <customfonts.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/pinjam_ruang"
+            android:lines="2"
+            android:textColor="#9d9ea0"
+            android:gravity="center"
+            android:paddingBottom="21dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp">
+
+            <customfonts.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:id="@+id/staff_btn"
+                android:textSize="16dp"
+                android:text="@string/staff"
+                android:textColor="#fff"
+                android:background="@drawable/rect_green"
+                android:padding="10dp"
+                android:gravity="center"/>
+
+            <customfonts.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:id="@+id/approve_btn"
+                android:textSize="16dp"
+                android:text="@string/approve"
+                android:textColor="#fff"
+                android:background="@drawable/rect_orange"
+                android:padding="10dp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

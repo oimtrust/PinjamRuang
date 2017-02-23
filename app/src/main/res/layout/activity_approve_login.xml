@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_approve_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.oimtrust.pinjamruang.activity.ApproveLoginActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/approvebg"
+        android:scaleType="centerCrop">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear_approveLogin"
+        android:orientation="vertical"
+        android:paddingBottom="40dp"
+        android:layout_alignParentBottom="true">
+
+        <customfonts.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/title_approveLogin"
+            android:text="@string/approve_login"
+            android:textColor="#4c565f"
+            android:textSize="29dp"
+            android:gravity="center"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/usernameApproveLogin_editText"
+            android:textColorHint="@color/colorhint"
+            android:textColor="@color/colortext">
+
+            <customfonts.MyEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:hint="@string/username"
+                android:layout_marginLeft="46dp"
+                android:textColorHint="@color/colorhint"
+                android:textColor="@color/colortext"
+                android:maxLength="12"
+                android:background="#0000"
+                android:padding="16dp"
+                android:gravity="left"
+                android:drawableLeft="@drawable/user"
+                android:drawablePadding="12dp"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="56dp"
+            android:layout_marginRight="56dp"
+            android:background="#59d58d"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/passwordApproveLogin_editText"
+            android:textColorHint="@color/colorhint"
+            android:textColor="@color/colortext">
+
+            <customfonts.MyEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:hint="@string/password"
+                android:layout_marginLeft="46dp"
+                android:layout_marginRight="46dp"
+                android:textColorHint="@color/colorhint"
+                android:textColor="@color/colortext"
+                android:background="#0000"
+                android:padding="16dp"
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/pass"
+                android:drawablePadding="12dp"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="56dp"
+            android:layout_marginRight="56dp"
+            android:background="#59d58d"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linear_rememberForgotApprove"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:id="@+id/rememberApproveLogin_checkbox"
+                android:text="@string/remember_me"
+                android:checked="false"
+                android:buttonTint="@color/colorhint"
+                android:textColor="@color/colorhint"
+                android:layout_marginLeft="60dp"
+                android:textSize="11dp"/>
+
+            <customfonts.MyTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.3"
+                android:id="@+id/forgotpassApproveLogin_textView"
+                android:text="@string/forgot_password"
+                android:textColor="@color/colorhint"
+                android:layout_gravity="center"
+                android:textSize="11dp"/>
+        </LinearLayout>
+
+        <customfonts.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/signinApproveLogin_button"
+            android:background="@drawable/rect_green1"
+            android:text="@string/sign_in"
+            android:textSize="16dp"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:padding="12dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="11dp"
+            android:elevation="3dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
